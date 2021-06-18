@@ -1,0 +1,7 @@
+---
+
+- include_tasks: ocp_login.yaml
+  when: ocp_login|default(False)==True
+  
+- include_tasks: ocp_logout.yaml
+  when: ocp_logout|default(False)==True
