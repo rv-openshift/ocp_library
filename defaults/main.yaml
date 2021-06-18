@@ -4,6 +4,7 @@
 # k8s_auth_username: "{{ lookup('env','K8S_USERNAME') }}"
 # k8s_auth_password: "{{ lookup('env','K8S_PASSWORD') }}"
 
+# if run on linux with oc
 k8s_auth_address: "{{ K8S_ADDR }}"
 k8s_auth_username: "{{K8S_USERNAME}}"
 k8s_auth_password: "{{K8S_PASSWORD}}"
