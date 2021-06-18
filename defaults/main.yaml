@@ -4,7 +4,7 @@
 # k8s_auth_username: "{{ lookup('env','K8S_USERNAME') }}"
 # k8s_auth_password: "{{ lookup('env','K8S_PASSWORD') }}"
 
-# if run on linux with oc
+# If run on linux with oc and ansible (instead of Tower)
 k8s_auth_address: "{{ K8S_ADDR }}"
 k8s_auth_username: "{{K8S_USERNAME}}"
 k8s_auth_password: "{{K8S_PASSWORD}}"
@@ -12,4 +12,5 @@ k8s_auth_password: "{{K8S_PASSWORD}}"
 # Allow administration even if cert is expired or self-signed
 k8s_validate_certs: no
 
+# Global variable
 k8s_auth_results:
