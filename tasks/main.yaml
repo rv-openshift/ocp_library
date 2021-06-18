@@ -1,5 +1,7 @@
 ---
 
+- include: getauth_k8s.yaml
+
 - include_tasks: ocp_login.yaml
   when: ocp_login|default(False)==True
   
