@@ -1,1 +1,4 @@
 ---
+
+- name: OCP lougout
+  shell: "{{ oc_dir}}/oc logout"
